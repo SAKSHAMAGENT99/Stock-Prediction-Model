@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saksham12345.pythonanywhere.com</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1> S&P 500 Prediction Model | One stop solution for all your needs</h1>
+     </header>
+     <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Our Projects</a>
+        <a href="#">About Us </a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <main>
+       <section> <h2> To grab your Prediction please give us some inputs :</h2>
+        <form action="{{ url_for('predict')}}" method="post">
+    <p><h3> ENTER THE OPEN TRADE :</h3></p>
+     <input type="number" name="Open" placeholder="ENTER THE OPEN TRADE" 			  		required="required" /><br> 
+     <p><h3> ENTER THE CLOSE TRADE :</h3></p>
+     <input type="number" name="Close" placeholder="ENTER THE CLOSE TRADE" 			  		required="required" /><br> 
+     <p><h3>ENTER THE HIGH TRADE :</h3></p>
+     <input type="number" name="High" placeholder="ENTER THE HIGH TRADE" 			  		required="required" /><br> 
+     <p><h3>ENTER THE LOW TRADE :</h3></p>
+     <input type="number" name="Low" placeholder="ENTER THE LOW TRADE" 			  		required="required" /><br> 
+     <p><h3>What is your gender?</h3></p>
+     <label><input type="radio" name="Sex" value="1" required="required" 		/>Male</label>
+        <label><input type="radio" name="Sex" value="0" required="required" 		/>Female</label><br>
+     <button type="submit"onclick="hello()">Predict</button>
+     </form>
+     <style>
+        .red {background: red;};
+        .blue {background: blue;};
+        .green {background: green;};
+        .yellow {background: yellow;};
+        .black {background: black;};
+     </style>
+ <script>
+    function hello(){
+
+    if (Open=4000) {
+        
+      document.write("CONGRATULATIONS!!!!!!! THE STOCK WILL  RISE UPTO 42.876%");
+        
+    } else {
+    document.write("OOPS !!!!!!!! THE STOCK TRADE WILL FALL NEXT TIME....WATCH OUT PAL");
+    } 
+}
+     </script>
+<p><h2>YOU WILL BE REDIRECTED TO A NEW PAGE FOR THE OUTPUT</h2></p>
+ <video src="video/vid1.mp4" width="33%"  poster="pictures/31.jfif" controls autoplay muted controls></video>
+ <video src="video/vid2.mp4" width="33%"  poster="pictures/download.png" controls autoplay  muted controls></video>
+ <video src="video/vid3.mp4" width="33%"  poster="pictures/images.jfif" controls autoplay  muted controls></video>
+ <br>
+ <br>
+ <br>
+ <video src="video/vid4.mp4" width="33%" controls autoplay  muted controls></video>
+ <video src="video/vid5.mp4" width="33%" controls autoplay  muted controls></video>
+ <video src="video/vid6.mp4" width="33%" controls  autoplay  muted controls></video>
+</section>
+<section>
+    <h2>AFFILIATED NGO | SHARESMILEINDIA</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wwUQDv1lYBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9FIimCxG3TM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <a href="Pyment_form.html" target="_blank"><h2>DONATE NOW</h2></a>
+</section>
+<section>
+    <h1>Share_smile_india_organisation</h1>
+    <iframe src="https://colab.research.google.com/drive/19IRARE-0NoGUIjuOs2WT0icAYwMIqXSJ?hl=en" width="70%" frameborder="0"></iframe>
+</section>
+<section>
+    <h2>FOUNDER</h2>
+    <img src="pictures/img1.jpeg" width="20%" alt="">
+<h2>Saksham Mishra</h2>
+</section>
+</main>
+<footer>
+    <a href="#">FAQ</a>
+    <a href="#">CONTACT US</a>
+    <a href="#">TERMS OF USE</a>
+    <a href="#">PRIVACY POLICY</a>
+    <a href="#">REFUND POLICY</a>
+    <a href="#">&copy; 2022 | S&P 500</a>
+</footer>
+
+
+</body> 
+</html>
